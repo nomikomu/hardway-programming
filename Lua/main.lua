@@ -79,7 +79,9 @@ function love.run()
       end
     end
     
-    
-
+  if love.timer then
+    love.timer.step()
+    dt = love.timer.getDelta()
+  end
   end
 end
