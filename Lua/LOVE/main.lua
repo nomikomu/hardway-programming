@@ -1,9 +1,9 @@
 function love.load()
   image = love.graphics.newImage('images/nature_alley.jpg')
+  x = 1
+  y = 1
   local f = love.graphics.newFont(12)
   love.graphics.setFont(f)
-  love.graphics.setColor(0,0,255)
-  love.graphics.setBackgroundColor(255,255,255)
 end
 
 function love.update(dt)
@@ -11,7 +11,7 @@ function love.update(dt)
   if love.keyboard.isDown("up") then
     num = num + 100 * dt
   end
-en
+end
 
 function love.mousepressed(x,y,button)
   if button == 'l' then
@@ -49,9 +49,8 @@ function love.quit()
 end
 
 function love.draw()
-  love.graphics.print("this txt is not black", 100, 100)
-  love.graphics.setColor(255,0,0)
-  love.graphics.print("thix txt is red", 100, 200)
+  love.graphics.draw(image, x, y)
+  love.graphics.print('rand print :3', 100, 100)
 end
 
 -- main loop
