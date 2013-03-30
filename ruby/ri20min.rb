@@ -28,3 +28,22 @@ class MegaGreeter
     end
   end
 end
+
+if __FILE == $0
+  mg = MegaGreeter.new
+  mg.say_hi
+  mg.say_bye
+  # name > "Phil"
+  mg.names = "Phil"
+  mg.say_hi
+  mg.say_bye
+  # name > list
+  mg.names = ['Charles','nigga','Roberts',
+    'Robin','Batman']
+  mg.say_hi
+  mg.say_bye
+  # name > nil
+  mg.names = nil
+  mg.say_hi
+  mg.say_bye
+end
