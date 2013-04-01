@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScripting</h1>
+
+<p id="demo">
+js can change the content of an HTML element.
+</p>
+
+<script>
+function myFunction(){
+  x = document.getElementById("demo");
+  // x = find element by id (in <p>)
+  x.innerHTML = "Hello JavaScript!";
+  // innerHTML on x = change demo to "Hello(...)"
+</script>
+
+<button type = "button" onclick="myFunction()">
+	Click Me!
+</button>
