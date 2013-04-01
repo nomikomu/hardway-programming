@@ -49,3 +49,24 @@ height="180">
 <button type="button" onclick="changeStle()">
 	Change style!
 </button>
+
+<br>
+
+<script>
+function checkForNumber(){
+	var z=document.getElementById("inpt").value;
+	if(z==""||isNaN(z)){
+		// if z=="" and is NotANumber(z)
+		alert("Not numeric");
+	} 
+}
+</script>
+
+<p> Onegai - input a number onii-chan!</p>
+<input id="inpt" type="text">
+<button type="button" onclick="checkForNumber()">
+	Check for num!
+</button>
+
+</body>
+</html>
