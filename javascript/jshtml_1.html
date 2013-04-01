@@ -14,7 +14,21 @@ function myFunction(){
   // x = find element by id (in <p>)
   x.innerHTML = "Hello JavaScript!";
   // innerHTML on x = change demo to "Hello(...)"
+ }
+function changeImage(){
+  element = document.getElementById('myimage')
+  if (element.src.match("bulbon")){
+  	element.src = "images/jshtml_1_001.gif";
+  }
+  else{
+  	element.src = "images/jshtml_1_002.gif";
+  }
+}
 </script>
+
+<img id="myimage" onclick="changeImage()"
+src="images/jshtml_1_001.gif" width="100"
+height = "180">
 
 <button type = "button" onclick="myFunction()">
 	Click Me!
