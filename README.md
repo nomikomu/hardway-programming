@@ -11,3 +11,22 @@ Nice use of Descartes quote at a begining of introduction "The Cartesian Dream O
   senses deceive, and it is prudent never to trust completely those who have deceived 
   us even once.
 > —Rene Descartes, Meditations On First Philosophy:wa
+
+<br>
+##Working on:
+- **Lua**:<br>
+
+> Basics - actualy I'm concentrated on LÖVE (Free 2D Game Engine).
+
+- **C**:<br>
+
+> Main task of learning C is to think in C. This should improve my programming skills.
+
+- **Ruby**:<br>
+
+> It's used often. I want to be able to understand what's going on with ruby code,
+to slightly change it for my purpose
+
+- **JavaScript**:<br>
+
+> I want to know how to build up some interesting site.
