@@ -21,6 +21,31 @@
 				  $articles.jScrollPane( scrollOptions );
 				}
 				$menu.children( 'nav' ).jScrollPane( scrollOptions );
+		  },
+	  _initWindowEvents = function(){
+		    'smartresize' : function( event ) {
+				  _layout();
+				  
+				  $('article.hs-content').each( function() {
+					    var $article 	= $(this)
+					        aJSP		= $article.data( 'jsp' );
+					    
+					    if( $(window).width() > 715 ) {
+							  ( aJSP === undefined ) ? $article.jScrollPane( scrollOptions ) : aJSP.reinitialise();
+							  _initArticleEvents();
+							}
+						else {
+							// destroy article's custom scroll if screen size <= 715
+							  if ( aJSP !== undefined )
+							       aJSP.destroy();
+							       
+							  $container.off( 'click', 'article.hs-content' );
+							}
+					   
+					  });
+					  
+					  
+				}
 		  }
 	
   })();
