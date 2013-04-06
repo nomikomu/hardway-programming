@@ -2,10 +2,10 @@
 
 body{
   font-family: Baskerville, "Hoefler Text", Garamond, "Times New Roman", serif;
-  background: #26251C url(../images/pattern.png) repeat top left;
+  background: #B3CC57 url(../images/pattern.png) repeat top left;
   font-weight: 400;
   font-size: 12px;
-  color: #EB0A44;
+  color: #5C323E;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -16,7 +16,7 @@ h1,h3,h4{
 
 h1{
   font-style: italic;
-  border-style: 1px solid rgba(242,100,61,0.3)
+  border-style: 1px solid rgba(168,39,67,0.3)
   padding: 35px 15px 15px 15px;
   margin: 0px 20px 20px 20px;
   position: relative;
@@ -28,7 +28,7 @@ h2{
   font-size: 40px;
   padding-bottom: 15px;
   border-bottom: 5px solid rgba(242,167,61,0.2);
-  color: #A0E8B7;
+  color: #A82743;
   text-shadow: 0px 1px 1px rgba(255,255,255,0.4);
   box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.4);
   font-weight: 700
@@ -77,7 +77,7 @@ a:hover{
   position: fixed;
   z-index: 100;
   color: #268FBE;
-  background: #551BB3;
+  background: #5C323E;
   width: 200px;
   left: 0px;
   top: 0px;
@@ -100,9 +100,29 @@ a:hover{
   border-bottom: 1px dashed rgba(126,126,126,0.2);
 }
 .hs-menu nav a:active{
-  box-shadow: 7px 0px 17px #000 inset;
+  box-shadow: 2px 0px 4px #EA525F inset;
 }
 .hs-menu nav a:first-child{
   border-top: 1px dashed rgba(126,126,126,0.2);
 }
-
+.hs-menu nav a span:nth-child(2){
+  display: block;
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 3px;
+}
+.hs-content-scroller{
+  position: absolute;
+  left: 200px;
+  right: 0px;
+  overflow: hidden;
+  height: 100%
+}
+.hs-content-wrapper{
+	width: 7950px;
+	position: absolute;
+	height: 100%
+	overflow: hidden;
+}
