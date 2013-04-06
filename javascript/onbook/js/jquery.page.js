@@ -53,8 +53,18 @@
 					_goto();
 				}
 		  
-	});
-
+		};
+	_initMenuEvents	= function() {
+		$links.on( 'click', function( event ) {
+			  var href 		= $(this).attr('href'),
+			      chapter	= ( href.search(/part/) !== -1) ? href.substring(8) : 0;
+			  _saveState( part );
+			  return false;
+			});
+			
+	}
+	
+	}();
   Page.init();
 	
 })(window);
