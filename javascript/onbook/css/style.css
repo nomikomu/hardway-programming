@@ -83,3 +83,26 @@ a:hover{
   top: 0px;
   height: 100%
 }
+
+.hs-menu nav{
+  position: absolute;
+  top: 250px;
+  left: 0px;
+  right: 0px;
+  bottom: 50px;
+}
+
+.hs-menu nav a{
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  outline: none;
+  border-bottom: 1px dashed rgba(126,126,126,0.2);
+}
+.hs-menu nav a:active{
+  box-shadow: 7px 0px 17px #000 inset;
+}
+.hs-menu nav a:first-child{
+  border-top: 1px dashed rgba(126,126,126,0.2);
+}
+
