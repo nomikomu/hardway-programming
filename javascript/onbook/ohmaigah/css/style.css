@@ -75,10 +75,10 @@ a:hover{
 }
 .hs-menu nav{
 	position: absolute;
-	top: 250px;
+	top: 380px;
 	left: 0px;
 	right: 0px;
-	bottom: 50px;
+	bottom: 20px;
 }
 .hs-menu nav a{
 	display: block;
