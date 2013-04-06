@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScripting</h1>
+
+<p id="demo">
+js can change the content of an HTML element.
+</p>
+<p id="style_chng">
+js can change style of content
+</p>
+
+<script>
+function myFunction(){
+  x = document.getElementById("demo");
+  // x = find element by id (in <p>)
+  x.innerHTML = "Hello JavaScript!";
+  // innerHTML on x = change demo to "Hello(...)"
+ }
+function changeImage(){
+  element = document.getElementById('myimage')
+  if (element.src.match("bulbon")){ // buble on
+  	element.src = "images/jshtml_1_001.gif";
+  // if src match ("bulbon") <~ bublon is random?
+  // or it's some kind of method or what?
+  }
+  else{ // buble goes off
+  	element.src = "images/jshtml_1_002.gif";
+  }
+}
+function changeStle(){
+  y = document.getElementById("style_chng")
+  // get doc info, save to y
+  y.style.color="#ff0000";
+  // y style color change to red
+  // after self method use > ;
+}
+</script>
+
+<img id="myimage" onclick="changeImage()"
+src="images/jshtml_1_001.gif" width="100"
+height="180">
+
+<button type="button" onclick="myFunction()">
+	Click Me!
+</button>
+<br>
+<button type="button" onclick="changeStle()">
+	Change style!
+</button>
+
+<br>
+
+<script>
+function checkForNumber(){
+	var z=document.getElementById("inpt").value;
+	if(z==""||isNaN(z)){
+		// if z=="" and is NotANumber(z)
+		alert("Not numeric");
+	} 
+}
+</script>
+
+<p> Onegai - input a number onii-chan!</p>
+<input id="inpt" type="text">
+<button type="button" onclick="checkForNumber()">
+	Check for num!
+</button>
+
+</body>
+</html>
