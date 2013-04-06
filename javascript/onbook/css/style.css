@@ -2,10 +2,10 @@
 
 body{
   font-family: Baskerville, "Hoefler Text", Garamond, "Times New Roman", serif;
-  background: #B3CC57 url(../images/pattern.png) repeat top left;
+  background: #161616 url(../images/pattern.png) repeat top left;
   font-weight: 400;
   font-size: 12px;
-  color: #5C323E;
+  color: #1F6764;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -28,7 +28,7 @@ h2{
   font-size: 40px;
   padding-bottom: 15px;
   border-bottom: 5px solid rgba(242,167,61,0.2);
-  color: #A82743;
+  color: #C94D65;
   text-shadow: 0px 1px 1px rgba(255,255,255,0.4);
   box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.4);
   font-weight: 700
@@ -37,7 +37,7 @@ h2{
 h3{
   font-style: italic;
   font-size: 26px;
-  color: #2CB8B2;
+  color: #92B35A;
   text-shadow: 1px 0px 1px rgba(255,255,255,0.4);
 }
 
@@ -46,7 +46,7 @@ h4{
   letter-spacing: 5px;
   line-height: 20px;
   padding: 10px 0px;
-  color: #3DDB8F;
+  color: #92B35A;
   border-bottom: 1px solid rgba(126,126,126,0.1);
   box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.4);
 }
@@ -76,8 +76,8 @@ a:hover{
 .hs-menu{
   position: fixed;
   z-index: 100;
-  color: #268FBE;
-  background: #5C323E;
+  color: #C94D65;
+  background: #161616;
   width: 200px;
   left: 0px;
   top: 0px;
@@ -135,4 +135,7 @@ a:hover{
 	border-left: 1px dashed rgba(255,255,255,0.5);
 	background: transparent
 	transition: background 0.3s linear;
+}
+.hs-content:hover, .hs-content-active{
+	background: #121213;
 }
