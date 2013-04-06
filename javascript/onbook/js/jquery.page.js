@@ -43,12 +43,18 @@
 							}
 					   
 					  });
+					  var nJSP = $menu.children( 'nav' ).data( 'jsp' );
+					  nJSP.reinitialise();
 					  
+					  _goto();
 					  
+				},
+				'statechange' : function( event ) {
+					_goto();
 				}
-		  }
-	
-  })();
+		  
+	});
+
   Page.init();
 	
 })(window);
