@@ -127,15 +127,23 @@ a:hover{
 	overflow: hidden;
 }
 .hs-content{
-	width: 500px;
-	overflow-y: scroll;
-	height: 100%;
-	float: left;
-	border-right: 1px dashed rgba(126,126,126,0.2);
-	border-left: 1px dashed rgba(255,255,255,0.5);
-	background: transparent
-	transition: background 0.3s linear;
+  width: 500px;
+  overflow-y: scroll;
+  height: 100%;
+  float: left;
+  border-right: 1px dashed rgba(126,126,126,0.2);
+  border-left: 1px dashed rgba(255,255,255,0.5);
+  background: transparent
+  transition: background 0.3s linear;
 }
 .hs-content:hover, .hs-content-active{
-	background: #121213;
+  background: #121213;
+}
+.hs-content:hover .jspVerticalBar,
+.hs-menu nav:hover .jspVerticalBar{
+  opacity: 1;
+}
+
+.hs-content:first-child{
+	width:400px;
 }
