@@ -73,3 +73,13 @@ a:hover{
   padding: 20px 10px;
 }
 
+.hs-menu{
+  position: fixed;
+  z-index: 100;
+  color: #268FBE;
+  background: #551BB3;
+  width: 200px;
+  left: 0px;
+  top: 0px;
+  height: 100%
+}
