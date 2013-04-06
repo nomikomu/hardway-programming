@@ -1,1 +1,11 @@
 @import url('normalize.css')
+
+body{
+  font-family: Baskerville, "Hoefler Text", Garamond, "Times New Roman", serif;
+  background: #26251C url(../images/pattern.png) repeat top left;
+  font-weight: 400;
+  font-size: 12px;
+  color: #EB0A44;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
