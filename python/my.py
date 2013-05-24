@@ -23,4 +23,5 @@ def get_salt():
 def get_word():
   init_w=raw_input('crypto: ')
 def list_storage_s():
-  pass
+  for i in range(len(a)):
+    print i, salt_storage[i]
