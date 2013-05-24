@@ -26,7 +26,7 @@ if os.path.exists("anime.txt"):
   f = file("anime.txt", "r+")
 else:
   f = file("anime.txt", "w")
-  
+
 class cmd_input(cmd.Cmd):
   # local time - get h:min:sec
   localtime_h = time.localtime()[3]
@@ -41,16 +41,16 @@ class cmd_input(cmd.Cmd):
     print len([name for name in os.listdir('.') if os.path.isfile(name)])
   def do_quit(self,line):
     sys.exit("sayonara")
-  def do_anime(self,line):
-	animu = open("foo.txt", "rw+")
-    animeT = "abc"
-    animu.seek(0,2)
-    line = fo.write( animeT )
+  #def do_anime(self,line):
+	#  animu = open("anime.txt", "rw+")
+  #  aanimeT = "abc"
+  #  animu.seek(0,2)
+  #  line = fo.write(aanimeT)
     
-    animu.seek(0,0)
-    for index in range(20):
-      animeT = animu.next()
-      print "No %d | %s" % (index,line)
+  #  animu.seek(0,0)
+  #  for index in range(20):
+  #    aanimeT = animu.next()
+  #    print "No %d | %s" % (index,line)
 
 if __name__ == '__main__':
   cmd_input().cmdloop()
