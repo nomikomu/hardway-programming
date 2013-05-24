@@ -11,6 +11,16 @@ def get_cryptwafles():
       return crypt.crypt(cleartext,crypto)==crypto
   else:
     return 1
-get_cryptwafles()
-print wafles
-print crypto
+#crypt.crypt(word,salt)
+salt_storage=[]
+def get_salt():
+  init_s=raw_input('salt: ')
+  lenofs=len(init_s)
+  if lenofs<=2:
+    print "fu and ur short salt"
+  init_s[::-1]
+  salt_storage.append[init_s]
+def get_word():
+  init_w=raw_input('crypto: ')
+def list_storage_s():
+  pass
