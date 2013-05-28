@@ -25,4 +25,7 @@ def get_word():
 def list_storage_s():
   for i in range(len(a)):
     print i, salt_storage[i]
+get_salt()
+get_word()
+list_storage_s
 
