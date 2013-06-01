@@ -7,14 +7,23 @@ class apples{
     Scanner sax = new Scanner(System.in);
     Scanner bax = new Scanner(System.in);
 
+    int test = 6;
+    if (test == 9){
+      System.out.println("oh mai");
+    }else{
+      System.out.println("ya shall not pass");
+    }
+
     // Increment Operators
-    int lumi = 5;
-    int dumi = 18;
-    System.out.println(lumi++);
-    System.out.println(lumi);
-    System.out.println(--lumi);
-    lumi += 88888888;
-    System.out.println(lumi);
+    /*
+      int lumi = 5;
+      int dumi = 18;
+      System.out.println(lumi++);
+      System.out.println(lumi);
+      System.out.println(--lumi);
+      lumi += 88888888;
+      System.out.println(lumi);
+    */
 
     // small calc
     /*
