@@ -3,11 +3,20 @@ import java.util.Scanner;
 class apples{
   //method
   public static void main(String args[]){
-    //get input
+    // get input
     Scanner sax = new Scanner(System.in);
     Scanner bax = new Scanner(System.in);
 
-    //small calc
+    // Increment Operators
+    int lumi = 5;
+    int dumi = 18;
+    System.out.println(lumi++);
+    System.out.println(lumi);
+    System.out.println(--lumi);
+    lumi += 88888888;
+    System.out.println(lumi);
+
+    // small calc
     /*
       double fnum, snum, anwser;
       System.out.println("num one: ");
@@ -19,13 +28,13 @@ class apples{
       System.out.print(anwser);
     */
 
-    //varible
+    // varible
     /*
       double tuna;
       tuna = 3.14;
     */
     
-    //print basic stuff
+    // print basic stuff
     /*
       System.out.println("I want ");
       System.out.print(tuna);
@@ -33,13 +42,16 @@ class apples{
       System.out.println("apples");
     */
 
-    int girls, boys, people;
-    girls = 7;
-    boys = 3;
-    people = girls % boys; //modulus - remainder
-    System.out.println(people);
+    // girlzu and boisu
+    /*
+      int girls, boys, people;
+      girls = 7;
+      boys = 3;
+      people = girls % boys; //modulus - remainder
+      System.out.println(people);
+    */
 
-    //print sax in nextLine
+    // print sax in nextLine
     //System.out.println(sax.nextLine());
   }
 }
