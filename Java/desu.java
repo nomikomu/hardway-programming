@@ -1,23 +1,34 @@
 
 class desu{
   public static void main(String args[]){
-    int age;
-    age = 15;
-
-    switch (age){
-    case 1:
-      System.out.println("you can crawl");
-      break;
-    case 2:
-      System.out.println("you can talk");
-      break;
-    case 18:
-      System.out.println("you can watch porn");
-      break;
-    default:
-      System.out.println("you can do absolutely nothing");
-    break;
+    int counter = 0;
+    while (counter < 10){
+      System.out.println(counter);
+      counter ++;
     }
+
+
+    // Switch Statement 
+    /*
+      int age;
+      age = 15;
+
+      switch (age){
+      case 1:
+        System.out.println("you can crawl");
+        break;
+      case 2:
+        System.out.println("you can talk");
+        break;
+      case 18:
+        System.out.println("you can watch porn");
+        break;
+      default:
+        System.out.println("you can do absolutely nothing");
+      break;
+      }
+    */
+
 
     // Logical operator test
     /*
