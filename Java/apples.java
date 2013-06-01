@@ -5,15 +5,26 @@ class apples{
   public static void main(String args[]){
     //get input
     Scanner sax = new Scanner(System.in);
+    Scanner bax = new Scanner(System.in);
+
+    //small calc
+    double fnum, snum, anwser;
+    System.out.println("num one: ");
+    fnum = bax.nextDouble();
+    System.out.println("num two: ");
+    snum = bax.nextDouble();
+    anwser = fnum + snum;
+    System.out.println("out: ");
+    System.out.print(anwser);
 
     //varible
     double tuna;
     tuna = 3.14;
 
-    System.out.print("I want ");
-    System.out.print(tuna);
-    System.out.println(" movies");
-    System.out.print("apples");
+    //System.out.println("I want ");
+    //System.out.print(tuna);
+    //System.out.println(" movies");
+    //System.out.println("apples");
 
     //print sax in nextLine
     System.out.println(sax.nextLine());
