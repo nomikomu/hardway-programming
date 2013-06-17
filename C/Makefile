@@ -1,6 +1,7 @@
-CFLAGS=-Wall -g -DDEBUG
+CFLAGS=-Wall -g
 
+all:
+	make ex1
 clean:
-	rm -f ex3
-debug: ex1.c
-	gcc -c ex3.c -o -debug
+	rm -f ex1
+
