@@ -2,7 +2,7 @@
 I want to increase my programming skills, and this will for self-development guided
 me to [Zed. A. Shaw](http://learncodethehardway.org/). I just take a quick look on 
 C language free online HTML Introduction, and decided to take commitment in learning. I
-really love Descartes by the way; thanks to him I have out existence of Spinoza.
+really love Descartes by the way; thanks to him I have find out existence of Spinoza.
 *****************************************************************************************
 For more info about Zed. A. Shaw, you may visit his [portfolio](http://zedshaw.com/).
 Nice use of Descartes quote at a begining of introduction "The Cartesian Dream Of C".
