@@ -41,6 +41,7 @@ int main(){
 
 	double x = 1;
 	double chngone, chngtwo;
+	double pick = 455.21122;
 
 	chngone = x * pi * gravity * rainbow;
 	chngtwo = pi * gravity * rainbow * (x - 0.5);
@@ -73,7 +74,24 @@ int main(){
 			else{printf("something went wrong! \n");}		
 		}
 	}
-	
+
+	/* LOOPS :3 */
+	int cond = 0,i = 0;
+
+	do{
+		cond += 1;
+		for(i <= 5; i = i + 1;){
+			printf("statement -- %d -- eval \n",i);
+			/* infinite loop problem */
+			if(i == 5){break;}
+		}
+		while(pick < 512){
+			if(pick <= 32){pick *=8;}
+			else{pick *=15;}
+			printf("end?");
+		}
+	}while(cond > 2); 
+
 	return 0;
 }
 
