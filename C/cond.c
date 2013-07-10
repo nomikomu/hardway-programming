@@ -58,12 +58,22 @@ int main(){
 			printf("val sh: %f \n",sh);
 			double fmax(double sh,double chngone);
 			double fmin(double sh,double chngone);
-			if(fmax && chngone){printf("C math! \n");}
-			else if(fmax || chngone){printf("still C math! \n");}
-			else{printf("something went wrong! \n");}
+			if(!(fmax && chngone)){printf("C math! \n");}
+			else if(fmax || chngone){
+				printf("still C math! \n");
+				const double typa = 32, typb = 64, typc = 128, typd = 256;
+
+				if(sh <= typa){printf("a: %f \n",typa);}
+				else if(sh <= typb){printf("b: %f \n",typb);}
+				else if(sh <= typc){printf("c: %f \n",typc);}
+				else if(sh <= typd){printf("d: %f \n",typd);}
+				else{printf("UNKNOW PROBLEM");}
+			}
+			else if(fmax && chngone){printf("yeah, C math! \n");}
+			else{printf("something went wrong! \n");}		
 		}
 	}
-
+	
 	return 0;
 }
 
