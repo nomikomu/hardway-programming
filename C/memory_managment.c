@@ -17,7 +17,17 @@ void main(){
 		strcpy(description, "I always liked ricin mai desktop, idk why.");
 	}
 
+	description = realloc(description, 100 * sizeof(char));
+	if(description == NULL){
+		fprintf(stderr, "Error - unable to allocate required memory\n");
+	}
+	else{
+		strcat(description, "Top A class otaku, watchin Evangerion.");
+	}
+
 	printf("name = %s\n", name);
 	printf("description = %s\n", description);
+
+	free(description);
 }
 
