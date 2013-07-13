@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-void main(){
-	int c;
+int main(){
+	/*int c;
 
 	printf("enter val: ");
 	c = getchar();
@@ -16,5 +16,13 @@ void main(){
 	
 	printf( "Entered: " );
 	puts( str );
-	printf("\n");
+	printf("\n");*/
+
+	char str[100];
+	int i;
+	printf ("Enter val: ");
+	scanf("%s %d", str, &i);
+
+	printf("\nEntered: %s, %d \n", str, i);
+	return 0;
 }
