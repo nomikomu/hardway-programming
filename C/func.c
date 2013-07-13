@@ -9,9 +9,22 @@ double force(float mass, float acceleration);	/* function declaration */
 double max_force(float first, float second);
 double min_force(float first, float second);
 
+/* function changing val by address */
+
+void addten(float *rain){
+	printf("rain before: %f \n", *rain);
+	(*rain) += 10;
+	printf("rain after: %f \n", *rain);
+}
+
 void main(){
 	double out_force_one, out_force_two;
 	float max_f, min_f;
+	
+	float rainbow = 10.110, *rain = &rainbow, contain;
+	printf("rainbow before: %f \n",rainbow);
+	addten(&rainbow);
+	printf("rainbow afrer: %f \n",rainbow);
 
 	out_force_one = force(ex_m, gravity);
 	out_force_two = force(ex_m_a, gravity);
